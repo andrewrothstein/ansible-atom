@@ -1,0 +1,35 @@
+---
+- name: (Debian) download atom
+  when: ansible_os_family == "Debian"
+  get_url: url='{{atom_deb_url}}' dest='/tmp/{{atom_deb}}'
+    
+- name: (Debian) install atom
+  when: ansible_os_family == "Debian"
+  apt: name='/tmp/{{atom_deb}}' state=present
+    
+- name: (RedHat) download atom
+  when: ansible_os_family == "RedHat"
+  get_url: url='{{atom_rpm_url}}' dest='/tmp/{{atom_rpm}}'
+    
+- name: (RedHat) install atom
+  when: ansible_os_family == "RedHat"
+  yum: name='/tmp/{{atom_rpm}}' state=present
+    
+- name: (Debian) atom hydrogen plugin dependencies
+  when: ansible_os_family == "Debian"
+  yum: name={{item}} state=present
+  with_items:
+    - libzmp-dev
+
+- name: (RedHat) atom hydrogen plugin dependencies
+  when: ansible_os_family == "RedHat"
+  yum: name={{item}} state=present
+  with_items:
+    - zeromq-devel
+
+- name: atom plugin dependency ipython[notebook]
+  pip: name='ipython[notebook]' state=present
+  
+- name: install atom hydrogen plugin
+  shell: apm install hydrogen
+    
