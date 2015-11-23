@@ -1,6 +1,6 @@
 ---
-atom_deb_url : 'https://atom.io/download/deb'
-atom_deb : 'atom-amd64.deb'
+atom_deb : 'atom-{{atom_dep_platform}}.deb'
+atom_deb_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_deb}}'
 
-atom_rpm_url : 'https://atom.io/download/rpm'
-atom_rpm : 'atom.x86_64.rpm'
+atom_rpm : 'atom.{{atom_rpm_platform}}.rpm'
+atom_rpm_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_rpm}}'
