@@ -1,5 +1,5 @@
 ---
-atom_deb : 'atom-{{atom_dep_platform}}.deb'
+atom_deb : 'atom-{{atom_deb_platform}}.deb'
 atom_deb_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_deb}}'
 
 atom_rpm : 'atom.{{atom_rpm_platform}}.rpm'
