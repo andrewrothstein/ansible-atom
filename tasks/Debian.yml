@@ -3,10 +3,4 @@
   get_url: url='{{atom_deb_url}}' dest='/tmp/{{atom_deb}}'
     
 - name: (Debian) install atom
-  apt: name='/tmp/{{atom_deb}}' state=present
-    
-- name: (Debian) atom hydrogen plugin dependencies
-  yum: name={{item}} state=present
-  with_items:
-    - libzmp-dev
-
+  apt: deb='/tmp/{{atom_deb}}' state=present
