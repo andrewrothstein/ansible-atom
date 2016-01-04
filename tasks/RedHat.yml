@@ -8,5 +8,6 @@
 - name: (RedHat) atom hydrogen plugin dependencies
   yum: name={{item}} state=present
   with_items:
+    - zeromq
     - zeromq-devel
 
