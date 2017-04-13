@@ -1,0 +1,6 @@
+---
+- hosts: all
+  vars:
+    atom_ver: 1.16.0
+  roles:
+    - role: ansible-atom

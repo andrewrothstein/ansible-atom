@@ -1,0 +1,3 @@
+FROM fedora:25
+
+RUN dnf install -y python2 python2-dnf libselinux-python ansible sudo

@@ -1,0 +1,33 @@
+---
+ansible:
+  playbook: tests/test.yml
+  verbose: True
+dependency:
+  name: galaxy
+driver:
+  name: docker
+docker:
+  containers:
+    - name: ansible-atom-ubuntu-xenial
+      image: ubuntu
+      image_version: xenial
+      command: /bin/bash
+      dockerfile: tests/Dockerfile-Ubuntu-xenial
+      ansible_groups:
+        - group1
+    - name: ansible-atom-fedora-25
+      image: fedora
+      image_version: 25
+      command: /bin/bash
+      dockerfile: tests/Dockerfile-Fedora-25
+      ansible_groups:
+        - group2
+    - name: ansible-atom-centos-7
+      image: centos
+      image_version: 7
+      command: /bin/bash
+      dockerfile: tests/Dockerfile-CentOS-7
+      ansible_groups:
+        - group3
+verifier:
+  name: testinfra
