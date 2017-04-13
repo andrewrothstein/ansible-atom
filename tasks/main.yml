@@ -7,9 +7,12 @@
   when: ansible_os_family == 'RedHat'
   include: RedHat.yml
 
+- name: Upgrade pip
+  pip: name=pip state=latest
+
 - name: atom plugin dependency ipython[notebook]
   pip: name='ipython[notebook]' state=present
-  
+
 - name: install atom hydrogen plugin
   shell: apm install hydrogen
-    
+  changed_when: False

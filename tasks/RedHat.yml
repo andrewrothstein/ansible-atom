@@ -1,13 +1,15 @@
 ---
 - name: (RedHat) download atom
   get_url: url='{{atom_rpm_url}}' dest='/tmp/{{atom_rpm}}'
-    
+
 - name: (RedHat) install atom
-  yum: name='/tmp/{{atom_rpm}}' state=present
-    
+  package: name='/tmp/{{atom_rpm}}' state=present
+
 - name: (RedHat) atom hydrogen plugin dependencies
-  yum: name={{item}} state=present
+  package: name={{item}} state=present
   with_items:
     - zeromq
     - zeromq-devel
-
+    - gcc
+    - python-devel
+    - redhat-rpm-config
