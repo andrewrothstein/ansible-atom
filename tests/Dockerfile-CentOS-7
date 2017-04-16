@@ -1,0 +1,6 @@
+FROM centos:7
+
+RUN yum install -y python2 libselinux-python sudo
+RUN yum install -y epel-release
+RUN yum clean all
+RUN yum install -y python2-pip

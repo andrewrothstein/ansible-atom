@@ -6,12 +6,11 @@
     owner=root
     group=root
     mode=0644
-    
+
 - name: (Debian) install atom
   apt: deb='/tmp/{{atom_deb}}'
-    
+
 - name: (Debian) atom hydrogen plugin dependencies
   apt: name={{item}} state=present
   with_items:
-    - libzmp-dev
-
+    - libzmq-dev
