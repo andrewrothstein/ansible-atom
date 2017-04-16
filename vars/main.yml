@@ -1,6 +1,4 @@
 ---
-atom_deb : 'atom-{{atom_deb_platform}}.deb'
-atom_deb_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_deb}}'
-
-atom_rpm : 'atom.{{atom_rpm_platform}}.rpm'
-atom_rpm_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_rpm}}'
+atom_pkg : 'atom{{atom_pkg_infix}}{{atom_platform}}.{{atom_pkg_suffix}}'
+atom_pkg_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_pkg}}'
+atom_pkg_checksum: '{{atom_checksums[atom_pkg_suffix]}}'

@@ -1,7 +1,8 @@
 ---
-atom_ver : '1.2.3'
-atom_mirror : 'https://github.com/atom/atom/releases/download'
-atom_deb_platform : 'amd64'
-atom_rpm_platform : 'x86_64'
+atom_ver : '1.16.0'
+atom_mirror : https://github.com/atom/atom/releases/download
+atom_checksums:
+  deb: sha256:0d6af2aa600ea7ef8d2a026d60bd55bbf3a88c1a4795edca3ffd4432be831f83
+  rpm: sha256:6305f149f7b85e498e56d92fe0927ca81fd4cce62153f266fcd8f39958a59e69
 
-hydrogen_enable : True
+atom_hydrogen_enable : True

@@ -1,0 +1,7 @@
+---
+- name: package install atom
+  become: yes
+  become_user: root
+  package:
+    name: /tmp/{{atom_pkg}}
+    state: present

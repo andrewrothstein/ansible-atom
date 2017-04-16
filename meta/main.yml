@@ -12,14 +12,19 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - 21
+        - 23
+        - 24
         - 25
     - name: Ubuntu
       versions:
         - trusty
         - xenial
 
-  categories:
+  galaxy_tags:
     - development
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.gcc-toolbox
+    version: v1.0.1
+  - role: andrewrothstein.python
+    version: v1.0.7

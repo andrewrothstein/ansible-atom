@@ -1,63 +1,40 @@
-# ansible-atom
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-atom.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-atom)
+andrewrothstein.atom
+==========================
 
-An Ansible role to install Atom Editor
+A role for installing [Atom](https://github.com/atom/atom).
 
-## Requirements
+Requirements
+------------
 
-- GCC
-- python-devel
-- redhat-rpm-config (on Fedora)
+See [meta/main.yml](meta/main.yml)
 
-## Role Variables
+Role Variables
+--------------
 
-defaults/main.yml
+See [defaults/main.yml](defaults/main.yml)
 
-```
-atom_ver : '1.2.3'
-atom_mirror : 'https://github.com/atom/atom/releases/download'
-atom_deb_platform : 'amd64'
-atom_rpm_platform : 'x86_64'
-```
+Dependencies
+------------
 
-vars/main.yml:
+See [meta/main.yml](meta/main.yml)
 
-```
-atom_deb : 'atom-{{atom_deb_platform}}.deb'
-atom_deb_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_deb}}'
+Example Playbook
+----------------
 
-atom_rpm : 'atom.{{atom_rpm_platform}}.rpm'
-atom_rpm_url : '{{atom_mirror}}/v{{atom_ver}}/{{atom_rpm}}'
-```
-
-## Dependencies
-
-None
-
-## Example Playbook
-
-```
-- hosts: all
-  vars:
-    atom_ver: 1.16.0
+```yml
+- hosts: servers
   roles:
-    - role: ansible-atom
+	- andrewrothstein.atom
 ```
 
-## Test
-
-```
-pip install molecule docker
-molecule test
-```
-
-## License
+License
+-------
 
 MIT
 
-## Author Information
+Author Information
+------------------
 
-<https://github.com/andrewrothstein>
-
-## Contributor
-
-<https://github.com/avnes>
+* Andrew Rothstein <andrewrothstein@gmail.com>
+* [Audun V. Nes](https://github.com/avnes]

@@ -1,0 +1,6 @@
+---
+- name: APT install atom
+  become: yes
+  become_user: root
+  apt:
+    deb: /tmp/{{atom_pkg}}
