@@ -18,12 +18,15 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - xenial
+    - name: Debian
+      versions:
+        - jessie
 
   galaxy_tags:
     - development
 
 dependencies:
   - role: andrewrothstein.gcc-toolbox
-    version: v1.0.1
+    version: v1.0.5
   - role: andrewrothstein.python
-    version: v1.0.7
+    version: v1.0.9

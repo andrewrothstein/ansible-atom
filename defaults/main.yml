@@ -1,8 +1,8 @@
 ---
-atom_ver : '1.16.0'
+atom_ver : '1.18.0'
 atom_mirror : https://github.com/atom/atom/releases/download
 atom_checksums:
-  deb: sha256:0d6af2aa600ea7ef8d2a026d60bd55bbf3a88c1a4795edca3ffd4432be831f83
-  rpm: sha256:6305f149f7b85e498e56d92fe0927ca81fd4cce62153f266fcd8f39958a59e69
-
+  deb: sha256:c657f0cc75bc1d722e3229869364f2f5a32acc269d8614a52ed73b8d20d31a1e
+  rpm: sha256:08609b26776ee12effd47ff87a2eb44f7ba9000a0e28b8022ca0bace0216e8d8
+    
 atom_hydrogen_enable : True

@@ -1,8 +1,8 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-atom.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-atom)
 andrewrothstein.atom
 ==========================
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-atom.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-atom)
 
-A role for installing [Atom](https://github.com/atom/atom).
+Installs [Atom](https://github.com/atom/atom).
 
 Requirements
 ------------
