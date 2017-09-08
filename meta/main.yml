@@ -15,12 +15,15 @@ galaxy_info:
         - 23
         - 24
         - 25
+        - 26
     - name: Ubuntu
       versions:
+        - trusty
         - xenial
     - name: Debian
       versions:
         - jessie
+        - stretch
 
   galaxy_tags:
     - development
@@ -29,4 +32,4 @@ dependencies:
   - role: andrewrothstein.gcc-toolbox
     version: v1.0.6
   - role: andrewrothstein.python
-    version: v1.0.9
+    version: v1.0.10
