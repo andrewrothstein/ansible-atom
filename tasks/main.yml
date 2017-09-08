@@ -22,5 +22,5 @@
 - include: '{{atom_pkg_installer|default("pkg")}}.yml'
 
 - include: hydrogen.yml
-  when: '{{atom_hydrogen_enable}}'
+  when: atom_hydrogen_enable
   
