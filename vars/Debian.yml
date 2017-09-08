@@ -5,4 +5,4 @@ atom_pkg_infix: '-'
 atom_pkg_installer: apt
 
 atom_hydrogen_dep_pkgs:
-  - libzmq-dev
+  - libzmq3-dev
