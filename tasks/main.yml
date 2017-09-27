@@ -19,8 +19,8 @@
     checksum: '{{atom_pkg_checksum}}'
     mode: 0644
 
-- include: '{{atom_pkg_installer|default("pkg")}}.yml'
+- include_tasks: '{{atom_pkg_installer|default("pkg")}}.yml'
 
-- include: hydrogen.yml
+- include_tasks: hydrogen.yml
   when: atom_hydrogen_enable
   
