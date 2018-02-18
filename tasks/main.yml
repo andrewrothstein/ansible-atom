@@ -15,7 +15,7 @@
   become_user: root
   get_url:
     url: '{{atom_pkg_url}}'
-    dest: /tmp/{{atom_pkg}}
+    dest: '{{atom_tmp_pkg}}'
     checksum: '{{atom_pkg_checksum}}'
     mode: 0644
 

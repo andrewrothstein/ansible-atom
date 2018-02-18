@@ -3,5 +3,5 @@
   become: yes
   become_user: root
   package:
-    name: /tmp/{{atom_pkg}}
+    name: '{{atom_tmp_pkg}}'
     state: present
