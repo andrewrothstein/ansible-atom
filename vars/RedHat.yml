@@ -7,4 +7,3 @@ atom_hydrogen_dep_pkgs:
   - zeromq
   - zeromq-devel
   - redhat-rpm-config
-

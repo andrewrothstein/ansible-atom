@@ -1,6 +1,6 @@
 ---
-atom_ver : '1.24.0'
-atom_mirror : https://github.com/atom/atom/releases/download
+atom_ver: '1.31.1'
+atom_mirror: https://github.com/atom/atom/releases/download
 atom_checksums:
   '1.21.2':
     deb: sha256:749f7a88f3fa1407dc1eea62c3d62d21b91337ff787e6f3528675699d185d06a
@@ -8,5 +8,10 @@ atom_checksums:
   '1.24.0':
     deb: sha256:eecf9e255bb57455a974db1823831860b036797879bb01cb39ca1f3729f97cfb
     rpm: sha256:b32fb2f65d38830c504d7403a7e25bfb35de23c6c896544983f5da9280f21a70
-    
-atom_hydrogen_enable : False
+  '1.31.1':
+    # https://github.com/atom/atom/releases/download/v1.31.1/atom-amd64.deb
+    dep: sha256:6bf99fe2b1c745f31c8e5efda1b3d78612f09453040e23792a6e9016e045c853
+    # https://github.com/atom/atom/releases/download/v1.31.1/atom.x86_64.rpm
+    rpm: sha256:63790d86852418f372e0f32bd8390d5dde809dfad8e7b697d8729213357d6638
+
+atom_hydrogen_enable: False
