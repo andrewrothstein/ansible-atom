@@ -20,7 +20,3 @@
     mode: 0644
 
 - include_tasks: '{{atom_pkg_installer|default("pkg")}}.yml'
-
-- include_tasks: hydrogen.yml
-  when: atom_hydrogen_enable
-  

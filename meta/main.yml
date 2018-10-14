@@ -17,6 +17,7 @@ galaxy_info:
         - 25
         - 26
         - 27
+        - 28
     - name: Ubuntu
       versions:
         - trusty
@@ -25,12 +26,5 @@ galaxy_info:
       versions:
         - jessie
         - stretch
-
   galaxy_tags:
     - development
-
-dependencies:
-  - role: andrewrothstein.gcc-toolbox
-    version: v1.0.7
-  - role: andrewrothstein.python
-    version: v1.0.10
